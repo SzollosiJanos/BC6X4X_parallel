@@ -25,13 +25,10 @@ void sumofarray(void* param1)
 	for(;i<N;i+=THREADNUMBER){
 		if(array[i]==0){
 			printf("%d number is zero\n",array[i]);
-			continue;
-		}else if(array[i]<0){
-			printf("%d number is negative\n",array[i]);
 		}else if(array[i]%2==0){
-			printf("%d number is even\n",array[i]);
-		}else if(array[i]%2==1){
-			printf("%d number is odd\n",array[i]);
+			printf("%d number is even %s\n",array[i],(array[i]<0)?"and negativ":"");
+		}else{
+			printf("%d number is odd %s\n",array[i],(array[i]<0)?"and negativ":"");
 		}
 	}
 }
@@ -46,6 +43,7 @@ int main(int argc, char* argv[])
 	printf("generate array\n");
 	for(i=0;i<N;i++){
 		array[i]=rand()%100-50;
+		printf("%d\n",array[i]);
 	}
 	clock_t begin = clock();
 	printf("create threads\n");
