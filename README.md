@@ -44,4 +44,5 @@
 > - quicksort(openmp):                      0.000
 > Összeségében a leggyorsabb: Quicksort(párhuzamosítással) és Quicksort(párhuzamosítás nélkül is) és merge sort(párhuzamosítással)
 > Összeségében a leglassabb: Minimum sort(párhuzamosítás nélkül)
+
 #Grafikonok: meresek.xlsm
