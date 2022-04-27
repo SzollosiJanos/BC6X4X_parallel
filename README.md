@@ -20,8 +20,8 @@
 > - quicksort(openmp):                      1.155
 > - Python quicksort:                       Megmérhetetlen sokáig tart(10.000 sor 23 másodperc, 20.000 sor már 120+ másodperc) a továbbiakban nem fog szerepelni
 > - Indok: A Python rendelkezik thread-el, de ez nem teljesen működik úgy, ahogy C nyelvben is(GlobalInterpreterLock).
-> Összeségében a leggyorsabb: Quicksort(párhuzamosítással)
-> Összeségében a leglassabb: Insertation
+> - Összeségében a leggyorsabb: Quicksort(párhuzamosítással)
+> - Összeségében a leglassabb: Insertation
 
 #Futási idő nagy méret esetén:
 > - Insertation sort:                       342.264
@@ -31,8 +31,8 @@
 > - Merge sort(pthread):                    0.094
 > - quicksort(párhuzamosítás nélkül):       0.047
 > - quicksort(openmp):                      0.047
-> Összeségében a leggyorsabb: Quicksort(párhuzamosítással) és Quicksort(párhuzamosítás nélkül is)
-> Összeségében a leglassabb: Insertation
+> - Összeségében a leggyorsabb: Quicksort(párhuzamosítással) és Quicksort(párhuzamosítás nélkül is)
+> - Összeségében a leglassabb: Insertation
 
 #Futási idő kis méret esetén:
 > - Insertation sort:                       0.125
@@ -42,7 +42,7 @@
 > - Merge sort(pthread):                    0.000
 > - quicksort(párhuzamosítás nélkül):       0.000
 > - quicksort(openmp):                      0.000
-> Összeségében a leggyorsabb: Quicksort(párhuzamosítással) és Quicksort(párhuzamosítás nélkül is) és merge sort(párhuzamosítással)
-> Összeségében a leglassabb: Minimum sort(párhuzamosítás nélkül)
+> - Összeségében a leggyorsabb: Quicksort(párhuzamosítással) és Quicksort(párhuzamosítás nélkül is) és merge sort(párhuzamosítással)
+> - Összeségében a leglassabb: Minimum sort(párhuzamosítás nélkül)
 
 #Grafikonok: meresek.xlsm
